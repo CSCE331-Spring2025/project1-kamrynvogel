@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Powers of AI</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff66b2, #ff9966);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+            animation: bg-shift 10s infinite alternate;
+        }
+        @keyframes bg-shift {
+            from { background: #ff66b2; }
+            to { background: #ff9966; }
+        }
+        .button {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .title {
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+            transform: rotate(-10deg);
+            margin-top: 150px;
+            position: relative;
+        }
+        .ball {
+            width: 50px;
+            height: 50px;
+            background: teal;
+            border-radius: 50%;
+            position: absolute;
+            animation: bounce-random 6s infinite ease-in-out;
+        }
+        @keyframes bounce-random {
+            0% { top: 0; left: 0; }
+            25% { top: 50%; left: 80%; }
+            50% { top: 80%; left: 50%; }
+            75% { top: 30%; left: 20%; }
+            100% { top: 0; left: 0; }
+        }
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: randomColor();
+            animation: fall 5s infinite ease-in;
+        }
+        @keyframes fall {
+            from { transform: translateY(-100px); }
+            to { transform: translateY(100vh); }
+        }
+        .textbox {
+            margin-top: 300px;
+            font-size: 24px;
+            color: white;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="button">Go to Home</a>
+    <div class="title">The Powers of AI</div>
+    <script>
+        for (let i = 0; i < 100; i++) {
+            let confetti = document.createElement('div');
+            confetti.className = 'confetti';
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
+            document.body.appendChild(confetti);
+        }
+    </script>
+    <div class="ball"></div>
+    <div class="textbox">
+        Generative AI Can Do This For You!<br>
+        Prompt: make me a professional, colorful website with a button at the top that link to "index.html" . I want a big title that is tilted a little bit. I also want confetti and a background that shifts between pink and orange. with a teal ball that bounces randomly around the screen. lastly, a textbox at the very bottom that says "Gen AI can do this for you" <br> "Prompt: and after prompt write the instructions I am typing you right now"
+    </div>
+</body>
+</html>
