@@ -3,6 +3,18 @@
     z-index: 2;
 }
 
+.toggle{
+    position: absolute;
+    top: 80px;
+    right: 350px;
+    z-index: 2;
+    font-size: 30px; 
+    background-color:darkcyan;
+    color: white;
+    border-radius: 20px; 
+    border-color: darkcyan;
+    padding: 20px 20px; 
+}
 .button{
     display:inline-block;
     background-color:darkcyan;
@@ -170,12 +182,13 @@
     border-radius: 10px; 
 }
 
-.button.resume{
+.resume{
     position: absolute;
     top: 780px;
-    left: 280px; 
-    background-color:rgba(138, 1, 1, 0.774);
-    transition: font-size .2s ease-in-out; 
+    left: 150px; 
+    width: 500px;
+    height: 700px;
+
 }
 
 .qualifications-photo{

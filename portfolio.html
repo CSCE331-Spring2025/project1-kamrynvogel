@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>About Me</title>
-        <link rel="stylesheet" href="style1.css">
+        <link id="mainStyleSheet" rel="stylesheet" href="style1.css" />
+
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +14,9 @@
 <div class="relative-wrapper">
 
             <h1 class="name">Kamryn Vogel</h1>
+
+            <button onclick="toggleStyleSheet()" type="button" class="toggle">Toggle Style</button>
+            <script src="toggle_style.js"></script>
       
         <a href="index.html"class="button">Home</a>
         <a href="portfolio.html"class="selected-button">Portfolio</a>
@@ -26,13 +30,14 @@
         <p class="portfolio-square first">For this project, I worked on a team to 
             create a working theramin. We did research, bought parts, assembled, and
             programmed the theramin. We also programmed a start-up sound to be
-            "Hullabaloo, Caneck! Caneck!" from the Aggie War Hymn.
+            "Hullabaloo, Caneck! Caneck!" from the 
+            <a href="https://youtu.be/6h7T_zbPGBw?si=qVTDjulInPuBgqCj">Aggie War Hymn.</a>
         </p>
 
         <p class="portfolio-circle second"><br>LED Project</p>
         <p class="portfolio-square second">The LED project was a competition between teams
             to make the "coolest" project involving LEDs. My team soldered and attatched a grid of 
-            of LEDs to a ceilinf tile and prgrammed images for the LED grid.
+            of LEDs to a ceiling tile and prgrammed images for the LED grid.
         </p>
 
         <p class="portfolio-circle third"><br>Robotic Arm Project</p>
